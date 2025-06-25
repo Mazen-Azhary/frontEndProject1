@@ -18,7 +18,7 @@ body{
     background-color:rgba(0, 169, 165, 0.7);
     position: fixed;
     top: 0;
-    z-index:24px
+    z-index:24
 }
 .searchBar{
     border-radius: 25px;
@@ -49,6 +49,9 @@ body{
     text-decoration: none;
     color: #0b5351;
     position: relative; 
+    padding: 5px 10px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .navBar li a::after {
@@ -69,4 +72,62 @@ body{
 .navBar li a:hover::after {
     width: 100%;
     background-color: #FFFFFF; 
+}
+/*//////////////////////////////////////////////////////////////*/
+.section1-container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../IMG/Motorola\ edge\ _\ Unlocked\ _\ Made\ for\ US\ by\ Motorola….jpeg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    top:40px
+}
+.section1-overlay{
+    position: absolute; 
+    z-index: 2;
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(11,83 , 81, 0.6); 
+}
+.section1-content{
+    width: 60%;
+    height: 45%;
+    /* background-color: blue; */
+    /*hero image*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+h1{
+margin-bottom: 5px;
+font-size: 50px;
+color: #FFFFFF;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.section1-content p{
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.section1-button{
+    padding: 10px 17px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.section1-button:hover{
+    transition: 0.3s ease-in-out;
+    opacity: 0.5;
+}
+.bluebtn{
+    background-color: #0b5351;
+    color: #FFFFFF;
 }
