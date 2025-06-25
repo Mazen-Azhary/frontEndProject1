@@ -2,9 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: #092327;
-    color: #0b5351;
-    color: #00a9a5;
 }
 body{
     height: 4500px;
@@ -34,4 +31,42 @@ body{
     margin-left: -160px;
     margin-top: 15px;
     height: 15px;   
+}
+.navBar{
+    list-style: none;
+    float: right;
+    margin-right: 20px;   
+}
+.navBar li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    position: relative; 
+}
+
+.navBar li a {
+    text-decoration: none;
+    color: #0b5351;
+    position: relative; 
+}
+
+.navBar li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; 
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #0b5351; 
+    transition: width 0.3s ease-in-out;
+}
+
+.navBar li a:hover {
+    color: #FFFFFF;
+}
+
+.navBar li a:hover::after {
+    width: 100%;
+    background-color: #FFFFFF; 
 }
