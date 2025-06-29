@@ -75,7 +75,7 @@
 .section1-container{
     width: 100%;
     height: 100vh;
-    background-image: url(../IMG/Motorola\ edge\ _\ Unlocked\ _\ Made\ for\ US\ by\ Motorola….jpeg);
+    background-image: url(../IMG/section1Container.jpeg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -137,7 +137,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 .section2-content{
     text-align: center;
 }
-.section2-content h2 {
+h2 {
     font-size: 40px;
     font-weight: bold;
     color: #0b5351;
@@ -148,7 +148,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     width: 10%;
     margin: 10px auto;
 }
-.card{
+.section2-card{
     width:29%;
     height: 30%;
     border:1px solid rgb(11,83 , 81); 
@@ -160,26 +160,91 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     color: #0b5351;
     font-weight: bold;
 }
-.card img{
+.section2-card img{
     margin-bottom: 10px;
 }
-.card h3{
+.section2-card h3{
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 margin-bottom: 10px;
 }
-.card p{
+.section2-card p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgba(11, 83, 81, 0.6);
     font-size: 15px;
     margin-bottom: 10px;
 }
-.card a{
+.section2-card a{
     text-decoration: none;
     color: #00c0ba;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.card a:hover{
+.section2-card a:hover{
     color: #0b5351;
     text-decoration: underline;
+}
+/*//////////////////////////////////////////////////////////////*/
+.featured-container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 169, 165, 0.3);
+    text-align: center;
+    padding-top: 40px;
+}
+.featured-parent{
+    /* background-color: red; */
+    width:80%;
+    height: 80%;
+    overflow: auto;
+    margin: 0 auto;
+}
+.featured-card{
+    float: left;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150px;
+    width:30%;
+    position: relative;
+}
+.featured-content{
+    width: 100%;
+    padding: 8px;
+    margin-bottom:150px;
+    
+}
+.c2{
+    margin-left:5%;
+    margin-right:5%;
+}
+.featured-overlay{
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0; 
+    background-color: rgba(11, 83, 81, 0.5);
+        
+}
+.featured-card:hover .featured-overlay{
+    opacity: 0.7;
+    transition: 0.1s ease-in-out;
+}
+h4{
+    font-size: 30px;
+}
+.overlay-hero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+.overlay-hero p{
+    color: rgba(220, 220, 220, 0.8);
+}
+.overlay-hero a i{
+    color: white; 
 }
