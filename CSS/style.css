@@ -136,6 +136,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 }
 .section2-content{
     text-align: center;
+    padding: 8px;
 }
 h2 {
     font-size: 40px;
@@ -192,7 +193,6 @@ margin-bottom: 10px;
     padding-top: 40px;
 }
 .featured-parent{
-    /* background-color: red; */
     width:80%;
     height: 80%;
     overflow: auto;
@@ -206,6 +206,7 @@ margin-bottom: 10px;
     height: 150px;
     width:30%;
     position: relative;
+    padding: 8px;
 }
 .featured-content{
     width: 100%;
@@ -247,4 +248,51 @@ h4{
 }
 .overlay-hero a i{
     color: white; 
+}
+/*//////////////////////////////////////////////////////////////*/
+.section3-container{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    padding-top: 40px;
+}
+.section3-parent{
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+.section3-card{
+    width: 30%;
+    height: 180px;
+    float: left;
+    padding: 8px;
+    border:1px solid rgb(11,83 , 81);
+    border-radius: 3px;
+    position: relative;
+}
+.section3-card i{
+    float: left;
+    position: absolute;
+    left: 20;
+    font-size: 40px;
+    top:20;
+    color: #0b5351;
+}
+.section3-card-content{
+    width: 70%;
+    height: 80%;
+    margin-left: auto;
+    text-align: left;
+    padding: 8px;
+}
+.section3-card-content span{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0b5351;
+}
+.section3-card-content p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+    color: rgba(11, 83, 81, 0.6);
+    font-size: 15px;
 }
