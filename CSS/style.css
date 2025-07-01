@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
 }
-
 .homeIcon{
     height: 25px;
     margin-top: 8px;
@@ -42,7 +41,6 @@
     font-size: 15px;
     position: relative; 
 }
-
 .navBar li a {
     text-decoration: none;
     color: #0b5351;
@@ -51,7 +49,6 @@
     font-size: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 .navBar li a::after {
     content: '';
     position: absolute;
@@ -62,7 +59,6 @@
     background-color: #0b5351; 
     transition: width 0.3s ease-in-out;
 }
-
 .navBar li a:hover {
     color: #FFFFFF;
 }
@@ -109,8 +105,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     margin-bottom: 10px;
     color: rgba(255, 255, 255, 0.6);
     font-size: 17px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
 }
 .section1-button{
     padding: 10px 17px;
@@ -366,4 +361,48 @@ margin-left: 5%;
     left: 0;
     top: 5px;
     margin-right: 10px;    
+}
+/*//////////////////////////////////////////////////////////////*/
+.section4-container{
+    width: 100%;
+    height: 400px;
+    background-image: url(../IMG/p8.jpeg); /* 8 is good */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: 50%;
+    position: relative;
+}
+.section4-parent{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+.section4-parent-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+}
+.section4-card{
+    width: 20%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    padding-top: 20%;
+    color: rgba(0, 169, 165, 0.7);
+    font-size: 50px;
+}
+.section4-card p{
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color:white;
+}
+.c3{
+    margin-left:5% ;
+    margin-right: 10%;
+}
+.c4{
+    margin-right:5%;
 }
