@@ -107,8 +107,7 @@
     position: absolute;
     bottom: 10; 
     left: 0;
-    width: 80%;
-    margin-left: auto;
+    width: 100%;
     height: 2px;
     background-color: #0b5351; 
 }
@@ -203,6 +202,33 @@ h2 {
     padding: 8px;
     color: #0b5351;
     font-weight: bold;
+    position: relative;
+}
+.section2-card::after{
+    content: '';
+    top:0;left:0;
+    width: 0%;
+    height: 0%;
+    opacity: 1;
+    background-color: #0b5351;
+
+    position: absolute;
+    z-index:-1 ;
+}
+.section2-card:hover::after{
+    height: 100%;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+    opacity: 0.5;
+}
+.section2-card:hover p{
+    transition: 1s ease-in-out;
+    color: #FFFFFF;
+}
+.section2-card:hover a{
+    transition: 1s ease-in-out;
+    
+    color: rgba(11, 83, 81, 0.9);
 }
 .section2-card img{
     margin-bottom: 10px;
@@ -213,7 +239,6 @@ margin-bottom: 10px;
 }
 .section2-card p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgba(11, 83, 81, 0.6);
     font-size: 15px;
     margin-bottom: 10px;
 }
