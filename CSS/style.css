@@ -638,9 +638,89 @@ margin-left: 5%;
     font-size: 15px;
 }
 .section8-content span{
-    /* margin-left: 70px; */
-    color: rgba(215, 215, 215, 0.9);
+    color:thistle;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
 }
 /*//////////////////////////////////////////////////////////////*/
+.teamSectionContainer{
+    width: 100%;
+    margin: auto;
+    background-color: rgba(0, 169, 165, 0.3);
+    text-align: center;
+    padding-top: 40px;
+}
+.teamSectionParent{
+    height: 90vh;
+    width: 80%;
+    text-align: center;
+    padding: 18px;
+    margin: auto;
+    overflow: auto;
+}
+.teamSectionCard{
+    border-radius: 10px;
+    float: left;
+    width: 30%;
+    height: 250px;
+    background-color: rgba(240, 240, 240, 0.6);
+    position: relative;
+    transition: all 1s;
+}
+.imgBgDiv{
+    position: relative;
+    width: 80%;
+    height: 150px;
+    margin: auto;
+    margin-top: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 5%;
+    border-radius: 10px;
+}
+.teamIcons a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    margin-bottom: -4px;
+    visibility: hidden;
+}
+.teamIcons{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+h6{
+    font-size: 20px;
+    color: #0b5351;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+}
+.teamSectionCard::after{
+    content: '';
+    top: 0;bottom: 0;right: 0;left: 0;
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    border-radius:10px ;
+}
+.teamSectionCard:hover::after{
+    background-color: rgba(11, 83, 81, 0.5);
+    transition: 0.5s ease-in-out;
+    height: 100%;
+    z-index: 1;
+}
+.teamSectionCard:hover a{
+    visibility: visible;
+    transition: 1s ease-in-out;
+    color: rgba(11, 83, 181, 0.9); 
+    z-index: 10;  
+}
+.teamSectionCard:hover p{
+    color: #FFFFFF;
+    transition: 1s ease-in-out;
+    z-index: 5;
+    position: relative;
+}
