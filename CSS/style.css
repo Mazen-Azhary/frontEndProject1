@@ -829,3 +829,81 @@ h6{
 .recentNewsCard:hover .readMore,.recentNewsCard:hover .readMore, .recentNewsCard:hover .socialsCard{
     z-index: 2;
 }
+/*//////////////////////////////////////////////////////////////*/
+.footerContainer{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 169, 165, 0.5);
+    bottom: 0;
+    padding: 10px;
+    padding-bottom: 0px;
+    margin: auto;
+    position: relative;
+}
+.footerImg{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-image: url(../IMG/person9.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    position: relative;
+}
+.footerImgOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(11, 83, 101, 0.4);
+    border-radius: 10px;
+}
+.footer-icons{
+    position: relative; 
+     width: 100%;
+    height: 90px;
+    margin-top: -10px;
+}
+.footer-div{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.footer-div div{
+    display: inline-block; /*to allow height and width for inline item*/
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+.footer-div a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.footer-div i{
+    line-height: 30px;
+}
+.footer-div div:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.footer-div div:hover a{
+
+    color: #00c0ba;
+}
+.footerContainer p{
+    color:rgba(255, 255, 255, 0.8);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin-top: -20px;
+}
